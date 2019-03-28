@@ -24,19 +24,19 @@ self.__precacheManifest = [
     "url": "/cryptozone/static/js/runtime~main.d5578da1.js"
   },
   {
-    "revision": "0dd0cf2158ff5ea055b3",
-    "url": "/cryptozone/static/js/main.72805899.chunk.js"
+    "revision": "347a327bf687f3c56e6f",
+    "url": "/cryptozone/static/js/main.6bfa060d.chunk.js"
   },
   {
     "revision": "3d171802b94b176ffa0f",
     "url": "/cryptozone/static/js/2.af59606f.chunk.js"
   },
   {
-    "revision": "0dd0cf2158ff5ea055b3",
+    "revision": "347a327bf687f3c56e6f",
     "url": "/cryptozone/static/css/main.1e6c5765.chunk.css"
   },
   {
-    "revision": "da7869592bafe5d554a6b689bd70ea73",
+    "revision": "f324fbcc89ba8487f1683a9f5cee8383",
     "url": "/cryptozone/index.html"
   }
 ];
