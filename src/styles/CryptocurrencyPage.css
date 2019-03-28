@@ -10,7 +10,7 @@ section.cryptocurrency {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
 section.cryptocurrency h1 {
@@ -131,7 +131,7 @@ section.cryptocurrency div.loading-animation img {
 @media (min-width: 360px) and (orientation: portrait) {
 
     section.cryptocurrency {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     section.cryptocurrency h1 {
@@ -178,7 +178,7 @@ section.cryptocurrency div.loading-animation img {
 @media (min-width: 410px) and (orientation: portrait) {
 
     section.cryptocurrency {
-        font-size: 1.6rem;
+        font-size: 1.15rem;
     }
 
     section.cryptocurrency h1 {
@@ -224,7 +224,7 @@ section.cryptocurrency div.loading-animation img {
 @media (min-width: 600px) and (orientation: portrait) {
 
     section.cryptocurrency {
-        font-size: 2.3rem;
+        font-size: 1.7rem;
     }
 
     section.cryptocurrency h1 {
