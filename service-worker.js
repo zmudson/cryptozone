@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cryptozone/precache-manifest.e108f4968e99dcef4e70a4f8f6e68e46.js"
+  "/cryptozone/precache-manifest.d33bc71b850c6f929507357e98d3bbec.js"
 );
 
 workbox.clientsClaim();
