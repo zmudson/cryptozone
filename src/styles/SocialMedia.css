@@ -1,0 +1,212 @@
+ul.social-media {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0.95rem 0;
+}
+
+ul.social-media li {
+    list-style: none;
+}
+
+ul.social-media li a {
+    display: flex;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #5A0102;
+    transition: 0.3s;
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+
+    ul.social-media {
+        padding: 1rem 0;
+    }
+
+    ul.social-media li a {
+        width: 2.2rem;
+        height: 2.2rem;
+        font-size: 2.2rem;
+    }
+
+}
+
+@media (min-width: 410px) and (orientation: portrait) {
+
+    ul.social-media {
+        padding: 1.2rem 0;
+    }
+
+    ul.social-media li a {
+        width: 2.6rem;
+        height: 2.6rem;
+        font-size: 2.6rem;
+    }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+
+    ul.social-media {
+        padding: 1.7rem 0;
+    }
+
+    ul.social-media li a {
+        width: 3.8rem;
+        height: 3.8rem;
+        font-size: 3.8rem;
+    }
+}
+
+@media (orientation: landscape) {
+
+    ul.social-media {
+        width: 50%;
+        padding: 0.5rem 0;
+    }
+
+    ul.social-media li a {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+        color: #5A0102;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+
+    ul.social-media {
+        padding: 0.6rem 0;
+    }
+
+    ul.social-media li a {
+        width: 2.4rem;
+        height: 2.4rem;
+        font-size: 1.7rem;
+        color: #5A0102;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 960px) {
+
+    ul.social-media {
+        padding: 0.9rem 0;
+    }
+
+    ul.social-media li a {
+        width: 3.6rem;
+        height: 3.6rem;
+        font-size: 2.7rem;
+        color: #5A0102;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1025px) {
+
+    ul.social-media {
+        display: flex;
+        justify-content: space-around;
+        padding: 0.7rem 0;
+        width: 30%;
+    }
+
+    ul.social-media li a {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2.4rem;
+    }
+
+    ul.social-media li a span {
+        position: absolute;
+        transition: transform 0.5s;
+    }
+
+    ul.social-media li a span:nth-of-type(odd) {
+        width: 100%;
+        height: 0.2rem;
+        background-color: #5A0102;
+    }
+
+    ul.social-media li a span:nth-of-type(even) {
+        width: 0.2rem;
+        height: 100%;
+        background-color: #5A0102;
+    }
+
+    ul.social-media li a span:nth-of-type(1) {
+        top: 0;
+        left: 0;
+        transform-origin: right;
+    }
+
+    ul.social-media li a:hover span:nth-of-type(1) {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    ul.social-media li a span:nth-of-type(3) {
+        bottom: 0;
+        left: 0;
+        transform-origin: left;
+    }
+
+    ul.social-media li a:hover span:nth-of-type(3) {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    ul.social-media li a span:nth-of-type(2) {
+        top: 0;
+        left: 0;
+        transform-origin: bottom;
+        transform: scaleY(0);
+    }
+
+    ul.social-media li a:hover span:nth-of-type(2) {
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+
+    ul.social-media li a span:nth-of-type(4) {
+        top: 0;
+        right: 0;
+        transform-origin: top;
+        transform: scaleY(0);
+    }
+
+    ul.social-media li a:hover span:nth-of-type(4) {
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+
+    ul.social-media {
+        padding: 1.15rem 0;
+    }
+
+    ul.social-media li a {
+        width: 4.5rem;
+        height: 4.5rem;
+        font-size: 2.7rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+
+    ul.social-media {
+        padding: 1.3rem 0;
+    }
+
+    ul.social-media li a {
+        width: 5rem;
+        height: 5rem;
+        font-size: 3rem;
+    }
+}

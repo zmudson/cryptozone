@@ -1,0 +1,239 @@
+section.news {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background-image: url('../images/lined-paper.png');
+}
+
+header.heading {
+    padding: 1.2rem 0;
+    background-image: url('../images/lined-paper.png');
+    text-align: center;
+    text-transform: uppercase;
+    color: #5A0102;
+}
+
+header.heading h1 {
+    font-size: 1.4rem;
+}
+
+section.news div.box-loading {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    width: 30%;
+    background: linear-gradient(#CA6B03, #FEFB36);
+    opacity: 0.8;
+    border-radius: 5%;
+    text-align: center;
+}
+
+section.news div.box-loading.hide {
+    display: none;
+}
+
+section.news div.box-loading h2 {
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    color: #5A0102;
+}
+
+section.news div.loading-animation img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-bottom: 0.5rem;
+    animation: spin 1.2s infinite;
+}
+
+
+@media (min-width: 360px) and (orientation: portrait) {
+
+    header.heading {
+        padding: 1.3rem 0;
+    }
+
+    header.heading h1 {
+        font-size: 1.5rem;
+    }
+
+    section.news div.box-loading h2 {
+        padding: 0.5rem 0;
+        font-size: 1.4rem;
+    }
+
+    section.news div.loading-animation img {
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+@media (min-width: 410px) and (orientation: portrait) {
+
+    header.heading {
+        padding: 1.5rem 0;
+    }
+
+    header.heading h1 {
+        font-size: 1.8rem;
+    }
+
+    section.news div.box-loading h2 {
+        padding: 0.6rem 0;
+        font-size: 1.7rem;
+    }
+
+    section.news div.loading-animation img {
+        width: 5.8rem;
+        height: 5.8rem;
+        margin-bottom: 0.6rem;
+    }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+
+    header.heading {
+        padding: 2.3rem 0;
+    }
+
+    header.heading h1 {
+        font-size: 2.6rem;
+    }
+
+    section.news div.box-loading h2 {
+        padding: 0.9rem 0;
+        font-size: 2.4rem;
+    }
+
+    section.news div.loading-animation img {
+        width: 8.5rem;
+        height: 8.5rem;
+        margin-bottom: 0.9rem;
+    }
+}
+
+@media (orientation: landscape) {
+
+    header.heading {
+        margin-top: 3rem;
+        padding: 2rem 0;
+    }
+
+    header.heading h1 {
+        font-size: 2.3rem;
+    }
+
+    section.news div.box-loading h2 {
+        padding: 0.8rem 0;
+        font-size: 1.2rem;
+    }
+
+    section.news div.loading-animation img {
+        width: 3.8rem;
+        height: 3.8rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+
+    header.heading {
+        margin-top: 3.6rem;
+        padding: 2.4rem 0;
+    }
+
+    header.heading h1 {
+        font-size: 2.8rem;
+    }
+
+    section.news div.box-loading h2 {
+        padding: 1rem 0;
+        font-size: 1.4rem;
+    }
+
+    section.news div.loading-animation img {
+        width: 4.6rem;
+        height: 4.6rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 960px) {
+
+    header.heading {
+        margin-top: 5.4rem;
+        padding: 3.6rem 0;
+    }
+
+    header.heading h1 {
+        font-size: 4.1rem;
+    }
+
+    section.news div.box-loading h2 {
+        padding: 1.4rem 0;
+        font-size: 2.1rem;
+    }
+
+    section.news div.loading-animation img {
+        width: 6.9rem;
+        height: 6.9rem;
+        margin-bottom: 1.4rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+
+    header.heading {
+        margin-top: 6.8rem;
+        padding: 4.8rem 0;
+    }
+
+    header.heading h1 {
+        font-size: 5.5rem;
+    }
+
+    section.news div.box-loading {
+        width: 20%;
+    }
+
+
+    section.news div.box-loading h2 {
+        padding: 1.8rem 0;
+        font-size: 2.7rem;
+    }
+
+    section.news div.loading-animation img {
+        width: 9rem;
+        height: 9rem;
+        margin-bottom: 1.8rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+
+    header.heading {
+        margin-top: 7.6rem;
+        padding: 5.3rem 0;
+    }
+
+    header.heading h1 {
+        font-size: 6rem;
+    }
+
+    section.news div.box-loading h2 {
+        padding: 2rem 0;
+        font-size: 3rem;
+    }
+
+    section.news div.loading-animation img {
+        width: 10rem;
+        height: 10rem;
+        margin-bottom: 2rem;
+    }
+}

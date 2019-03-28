@@ -1,0 +1,37 @@
+footer {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#FEFB36, #CA6B03);
+}
+
+div.footer {
+    display: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    color: #5A0102;
+    flex-grow: 1;
+}
+
+@media (orientation: landscape) and (min-width: 1025px) {
+    div.footer {
+        display: flex;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    div.footer {
+        font-size: 2.7rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+    div.footer {
+        font-size: 3rem;
+    }
+}

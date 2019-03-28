@@ -1,0 +1,340 @@
+section.home div.card {
+    display: block;
+    position: relative;
+    flex-direction: column;
+    width: 80%;
+    background: linear-gradient(#CA6B03, #FEFB36);
+    opacity: 0.8;
+    border-radius: 5%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+section.home.loading div.card {
+    display: none;
+}
+
+section.home div.card h1 {
+    color: #711400;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    letter-spacing: 0.1rem;
+    padding: 0.4rem 0;
+    background: linear-gradient(#CA6B03, #FEFB36);
+    border-radius: 5%;
+}
+
+section.home div.card h2 {
+    color: #5A0102;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+    padding: 0.8rem 0;
+}
+
+section.home div.card h2:nth-of-type(3) {
+    background: linear-gradient(#CA6B03, #FEFB36);
+    border-radius: 5%;
+}
+
+section.home div.card h2:nth-last-of-type(1) {
+    padding: 0.8rem 0 5.6rem 0;
+}
+
+section.home div.card img.crypto {
+    width: 8rem;
+    height: 8rem;
+    margin: 4rem 0 1.6rem 0;
+    border-radius: 50%;
+    align-self: center;
+}
+
+section.home div.info {
+    position: relative;
+    flex-grow: 1;
+}
+
+section.home div.read {
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    right: -5%;
+    transform: rotate(-15deg);
+    background-color: #F6DD42;
+    transition: 0.3s;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+section.home div.read a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #711400;
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+
+    section.home div.card h1 {
+        font-size: 3.2rem;
+        padding: 0.5rem 0;
+    }
+
+    section.home div.card h2 {
+        font-size: 2.5rem;
+        padding: 0.9rem 0;
+    }
+
+    section.home div.card h2:nth-last-of-type(1) {
+        padding: 0.9rem 0 6.3rem 0;
+    }
+
+    section.home div.card img.crypto {
+        width: 9rem;
+        height: 9rem;
+        margin: 4.5rem 0 1.8rem 0;
+    }
+
+    section.home div.read a {
+        padding: 2.2rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 410px) and (orientation: portrait) {
+    section.home div.card h1 {
+        font-size: 3.6rem;
+        padding: 0.6rem 0;
+    }
+
+    section.home div.card h2 {
+        font-size: 2.8rem;
+        padding: 1rem 0;
+    }
+
+    section.home div.card h2:nth-last-of-type(1) {
+        padding: 1rem 0 7.2rem 0;
+    }
+
+    section.home div.card img.crypto {
+        width: 10rem;
+        height: 10rem;
+        margin: 5rem 0 2.1rem 0;
+    }
+
+    section.home div.read a {
+        padding: 2.6rem;
+        font-size: 2.1rem;
+    }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+
+    section.home div.card {
+        width: 70%;
+    }
+
+    section.home div.card h1 {
+        font-size: 5.3rem;
+        padding: 0.8rem 0;
+    }
+
+    section.home div.card h2 {
+        font-size: 4.1rem;
+        padding: 1.5rem 0;
+    }
+
+    section.home div.card h2:nth-last-of-type(1) {
+        padding: 1.5rem 0 10.5rem 0;
+    }
+
+    section.home div.card img.crypto {
+        width: 15rem;
+        height: 15rem;
+        margin: 7.5rem 0 3rem 0;
+    }
+
+    section.home div.read a {
+        padding: 3.75rem;
+        font-size: 3rem;
+    }
+}
+
+@media (orientation: landscape) {
+
+    section.home div.card {
+        width: 25%;
+        margin: 5% 2.5% 0 2.5%;
+    }
+
+    section.home div.card h1 {
+        font-size: 1.6rem;
+        padding: 0.2rem 0;
+    }
+
+    section.home div.card h2 {
+        font-size: 1.3rem;
+        padding: 0.5rem 0;
+    }
+
+    section.home div.card h2:nth-last-of-type(1) {
+        padding: 0.5rem 0 3.1rem 0;
+    }
+
+    section.home div.card img.crypto {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin: 2.2rem 0 0.9rem 0;
+    }
+
+    section.home div.read a {
+        font-size: 0.9rem;
+        padding: 1.2rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+
+    section.home div.card h1 {
+        font-size: 1.9rem;
+        padding: 0.3rem 0;
+    }
+
+    section.home div.card h2 {
+        font-size: 1.6rem;
+        padding: 0.6rem 0;
+    }
+
+    section.home div.card h2:nth-last-of-type(1) {
+        padding: 0.6rem 0 3.7rem 0;
+    }
+
+    section.home div.card img.crypto {
+        width: 5.4rem;
+        height: 5.4rem;
+        margin: 2.7rem 0 1.1rem 0;
+    }
+
+    section.home div.read a {
+        font-size: 1.1rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 960px) {
+
+    section.home div.card {
+        width: 20%;
+    }
+
+    section.home div.card h1 {
+        font-size: 2.8rem;
+        padding: 0.4rem 0;
+    }
+
+    section.home div.card h2 {
+        font-size: 2.3rem;
+        padding: 0.8rem 0;
+    }
+
+    section.home div.card h2:nth-last-of-type(1) {
+        padding: 0.8rem 0 5.6rem 0;
+    }
+
+    section.home div.card img.crypto {
+        width: 8rem;
+        height: 8rem;
+        margin: 4rem 0 1.6rem 0;
+    }
+
+    section.home div.read a {
+        font-size: 1.6rem;
+        padding: 2.1rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1025px) {
+
+    section.home div.card:hover {
+        transform: scale(1.1);
+    }
+
+    section.home div.card:hover div.read {
+        opacity: 1;
+    }
+
+    section.home div.read {
+        opacity: 0;
+    }
+
+    section.home div.read:hover {
+        background-color: #A25603;
+    }
+
+    section.home div.read:hover a {
+        color: white;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+
+    section.home div.card h1 {
+        font-size: 3.2rem;
+        padding: 0.5rem 0;
+    }
+
+    section.home div.card h2 {
+        font-size: 2.5rem;
+        letter-spacing: 0.1rem;
+        padding: 0.9rem 0;
+    }
+
+    section.home div.card h2:nth-last-of-type(1) {
+        padding: 0.9rem 0 6.3rem 0;
+    }
+
+    section.home div.card img.crypto {
+        width: 9rem;
+        height: 9rem;
+        margin: 4.5rem 0 1.8rem 0;
+    }
+
+    section.home div.read a {
+        font-size: 1.8rem;
+        padding: 2.3rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+
+    section.home div.card h1 {
+        font-size: 3.5rem;
+        padding: 0.5rem 0;
+    }
+
+    section.home div.card h2 {
+        font-size: 2.8rem;
+        padding: 1rem 0;
+    }
+
+    section.home div.card h2:nth-last-of-type(1) {
+        padding: 1rem 0 7rem 0;
+    }
+
+    section.home div.card img.crypto {
+        width: 10rem;
+        height: 10rem;
+        margin: 5rem 0 2rem 0;
+    }
+
+    section.home div.read a {
+        padding: 2.5rem;
+        font-size: 2rem;
+    }
+}

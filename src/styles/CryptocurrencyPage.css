@@ -1,0 +1,532 @@
+section.cryptocurrency {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/background-image.jpg');
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 1.2rem;
+}
+
+section.cryptocurrency h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 0.9rem 0;
+    background: linear-gradient(#FEFB36, #CA6B03);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    transition: 0.5s;
+    color: #5A0102;
+}
+
+section.cryptocurrency h1.hidden {
+    top: -4.1rem;
+}
+
+section.cryptocurrency div.description {
+    position: relative;
+    width: 90%;
+    padding: 3%;
+    background: linear-gradient(#CA6B03, #FEFB36);
+    opacity: 0.8;
+    text-align: center;
+    color: #5A0102;
+}
+
+section.cryptocurrency div.description a {
+    position: absolute;
+    bottom: 0.2rem;
+    right: 0.2rem;
+    transition: color 0.3s;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: #5A0102;
+}
+
+section.cryptocurrency div.description a:hover {
+    color: blue;
+}
+
+section.cryptocurrency div.box-table {
+    display: flex;
+    justify-content: center;
+}
+
+section.cryptocurrency table {
+    width: 90%;
+    margin-top: 1.3rem;
+    background: linear-gradient(#CA6B03, #FEFB36);
+    opacity: 0.8;
+    table-layout: fixed;
+}
+
+section.cryptocurrency table,
+section.cryptocurrency td,
+section.cryptocurrency th {
+    text-align: center;
+    color: #5A0102;
+    padding: 0.6rem 0;
+    border: 0.1rem solid #5A0102;
+    border-collapse: collapse;
+}
+
+section.cryptocurrency thead {
+    display: table-header-group;
+    vertical-align: middle;
+    text-align: center;
+}
+
+section.cryptocurrency caption {
+    background: linear-gradient(#CA6B03, #FEFB36, #CA6B03);
+    opacity: 0.8;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: black;
+}
+
+section.cryptocurrency div.box-loading {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    width: 30%;
+    background: linear-gradient(#CA6B03, #FEFB36);
+    opacity: 0.8;
+    border-radius: 5%;
+    text-align: center;
+}
+
+section.cryptocurrency div.box-loading.hide {
+    display: none;
+}
+
+section.cryptocurrency div.box-loading h2 {
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    color: #5A0102;
+}
+
+section.cryptocurrency div.loading-animation img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-bottom: 0.5rem;
+    animation: spin 1.2s infinite;
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+
+    section.cryptocurrency {
+        font-size: 1.4rem;
+    }
+
+    section.cryptocurrency h1 {
+        padding: 1rem 0;
+        font-size: 2rem;
+    }
+
+    section.cryptocurrency h1.hidden {
+        top: -4.6rem;
+    }
+
+    section.cryptocurrency div.description a {
+        font-size: 0.8rem;
+    }
+
+    section.cryptocurrency table {
+        margin-top: 1.5rem;
+    }
+
+    section.cryptocurrency table,
+    section.cryptocurrency td,
+    section.cryptocurrency th {
+        padding: 0.7rem 0;
+    }
+
+    section.cryptocurrency caption {
+        padding: 0.6rem;
+        font-size: 1.5rem;
+    }
+
+    section.cryptocurrency div.box-loading h2 {
+        padding: 0.5rem 0;
+        font-size: 1.4rem;
+    }
+
+    section.cryptocurrency div.loading-animation img {
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+@media (min-width: 410px) and (orientation: portrait) {
+
+    section.cryptocurrency {
+        font-size: 1.6rem;
+    }
+
+    section.cryptocurrency h1 {
+        padding: 1.1rem 0;
+        font-size: 2.3rem;
+    }
+
+    section.cryptocurrency h1.hidden {
+        top: -5.2rem;
+    }
+
+    section.cryptocurrency div.description a {
+        font-size: 0.9rem;
+    }
+
+    section.cryptocurrency table {
+        margin-top: 1.7rem;
+    }
+
+    section.cryptocurrency table,
+    section.cryptocurrency td,
+    section.cryptocurrency th {
+        padding: 0.8rem 0;
+    }
+
+    section.cryptocurrency caption {
+        padding: 0.7rem;
+        font-size: 1.7rem;
+    }
+
+    section.cryptocurrency div.box-loading h2 {
+        padding: 0.6rem 0;
+        font-size: 1.7rem;
+    }
+
+    section.cryptocurrency div.loading-animation img {
+        width: 5.8rem;
+        height: 5.8rem;
+        margin-bottom: 0.6rem;
+    }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+
+    section.cryptocurrency {
+        font-size: 2.3rem;
+    }
+
+    section.cryptocurrency h1 {
+        padding: 1.6rem 0;
+        font-size: 3.4rem;
+    }
+
+    section.cryptocurrency h1.hidden {
+        top: -7.6rem;
+    }
+
+    section.cryptocurrency div.description a {
+        font-size: 1.3rem;
+    }
+
+    section.cryptocurrency table {
+        margin-top: 2.5rem;
+    }
+
+    section.cryptocurrency table,
+    section.cryptocurrency td,
+    section.cryptocurrency th {
+        padding: 1.1rem 0;
+    }
+
+    section.cryptocurrency caption {
+        padding: 1rem;
+        font-size: 2.5rem;
+    }
+
+    section.cryptocurrency div.box-loading h2 {
+        padding: 0.9rem 0;
+        font-size: 2.4rem;
+    }
+
+    section.cryptocurrency div.loading-animation img {
+        width: 8.5rem;
+        height: 8.5rem;
+        margin-bottom: 0.9rem;
+    }
+}
+
+@media (orientation: landscape) {
+
+    section.cryptocurrency {
+        font-size: 0.9rem;
+    }
+
+    section.cryptocurrency h1 {
+        padding: 0.9rem 0;
+        font-size: 1.7rem;
+    }
+
+    section.cryptocurrency h1.hidden {
+        top: -4rem;
+    }
+
+    section.cryptocurrency div.description {
+        width: 80%;
+        margin-top: 5.3rem;
+        padding: 2%;
+    }
+
+    section.cryptocurrency div.description a {
+        bottom: 0.2rem;
+        right: 0.2rem;
+        font-size: 0.6rem;
+    }
+
+    section.cryptocurrency table {
+        width: 80%;
+        margin-top: 1.7rem;
+    }
+
+    section.cryptocurrency table,
+    section.cryptocurrency td,
+    section.cryptocurrency th {
+        padding: 0.4rem 0;
+    }
+
+    section.cryptocurrency caption {
+        padding: 0.4rem;
+        font-size: 1.3rem;
+    }
+
+    section.cryptocurrency div.box-loading h2 {
+        padding: 0.8rem 0;
+        font-size: 1.2rem;
+    }
+
+    section.cryptocurrency div.loading-animation img {
+        width: 3.8rem;
+        height: 3.8rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+
+    section.cryptocurrency {
+        font-size: 1.1rem;
+    }
+
+    section.cryptocurrency h1 {
+        padding: 1.1rem 0;
+        font-size: 2.1rem;
+    }
+
+    section.cryptocurrency h1.hidden {
+        top: -4.8rem;
+    }
+
+    section.cryptocurrency div.description {
+        margin-top: 6.4rem;
+    }
+
+    section.cryptocurrency div.description a {
+        font-size: 0.7rem;
+    }
+
+    section.cryptocurrency table {
+        margin-top: 2.1rem;
+    }
+
+    section.cryptocurrency table,
+    section.cryptocurrency td,
+    section.cryptocurrency th {
+        padding: 0.5rem 0;
+    }
+
+    section.cryptocurrency caption {
+        padding: 0.5rem;
+        font-size: 1.6rem;
+    }
+
+    section.cryptocurrency div.box-loading h2 {
+        padding: 1rem 0;
+        font-size: 1.4rem;
+    }
+
+    section.cryptocurrency div.loading-animation img {
+        width: 4.6rem;
+        height: 4.6rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 960px) {
+
+    section.cryptocurrency {
+        font-size: 1.6rem;
+    }
+
+    section.cryptocurrency h1 {
+        padding: 1.6rem 0;
+        font-size: 3.2rem;
+    }
+
+    section.cryptocurrency h1.hidden {
+        top: -7.2rem;
+    }
+
+    section.cryptocurrency div.description {
+        margin-top: 9.6rem;
+    }
+
+    section.cryptocurrency div.description a {
+        bottom: 0.3rem;
+        right: 0.3rem;
+        font-size: 1.1rem;
+    }
+
+    section.cryptocurrency table {
+        margin-top: 3.2rem;
+    }
+
+    section.cryptocurrency table,
+    section.cryptocurrency td,
+    section.cryptocurrency th {
+        padding: 0.8rem 0;
+        border: 0.2rem solid #5A0102;
+    }
+
+    section.cryptocurrency caption {
+        padding: 0.8rem;
+        font-size: 2.4rem;
+    }
+
+    section.cryptocurrency div.box-loading h2 {
+        padding: 1.4rem 0;
+        font-size: 2.1rem;
+    }
+
+    section.cryptocurrency div.loading-animation img {
+        width: 6.9rem;
+        height: 6.9rem;
+        margin-bottom: 1.4rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+
+    section.cryptocurrency {
+        font-size: 1.8rem;
+    }
+
+    section.cryptocurrency h1 {
+        padding: 1.8rem 0;
+        font-size: 3.6rem;
+    }
+
+    section.cryptocurrency h1.hidden {
+        top: -8.1rem;
+    }
+
+    section.cryptocurrency div.description {
+        margin-top: 10.8rem;
+    }
+
+    section.cryptocurrency div.description a {
+        bottom: 0.4rem;
+        right: 0.4rem;
+        font-size: 1.3rem;
+    }
+
+    section.cryptocurrency table {
+        margin-top: 3.6rem;
+    }
+
+    section.cryptocurrency table,
+    section.cryptocurrency td,
+    section.cryptocurrency th {
+        padding: 0.9rem 0;
+    }
+
+    section.cryptocurrency caption {
+        padding: 0.9rem;
+        font-size: 2.7rem;
+    }
+
+    section.cryptocurrency div.box-loading {
+        width: 20%;
+    }
+
+    section.cryptocurrency div.box-loading h2 {
+        padding: 1.8rem 0;
+        font-size: 2.7rem;
+    }
+
+    section.cryptocurrency div.loading-animation img {
+        width: 9rem;
+        height: 9rem;
+        margin-bottom: 1.8rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+
+    section.cryptocurrency {
+        font-size: 2rem;
+    }
+
+    section.cryptocurrency h1 {
+        padding: 2rem 0;
+        font-size: 4rem;
+    }
+
+    section.cryptocurrency h1.hidden {
+        top: -9rem;
+    }
+
+    section.cryptocurrency div.description {
+        margin-top: 12rem;
+    }
+
+    section.cryptocurrency div.description a {
+        font-size: 1.5rem;
+    }
+
+    section.cryptocurrency table {
+        margin-top: 4rem;
+    }
+
+    section.cryptocurrency table,
+    section.cryptocurrency td,
+    section.cryptocurrency th {
+        padding: 1rem 0;
+    }
+
+    section.cryptocurrency caption {
+        padding: 1rem;
+        font-size: 3rem;
+    }
+
+    section.cryptocurrency div.box-loading h2 {
+        padding: 2rem 0;
+        font-size: 3rem;
+    }
+
+    section.cryptocurrency div.loading-animation img {
+        width: 10rem;
+        height: 10rem;
+        margin-bottom: 2rem;
+    }
+}

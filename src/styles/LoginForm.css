@@ -1,0 +1,789 @@
+section.login-page div.box {
+    position: fixed;
+    background: linear-gradient(#CA6B03, #FEFB36);
+    opacity: 0.8;
+    box-shadow: 0 1.5rem 2.5rem #0000007F;
+    border-radius: 5%;
+}
+
+section.login-page div.box {
+    min-width: 80%;
+    padding: 3rem;
+    box-shadow: 0 1rem 1.5rem #0000007F;
+}
+
+div.box h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+div.box div.input-box {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+div.input-box input {
+    width: 100%;
+    padding: 0.5rem 0;
+    border: none;
+    border-bottom: 0.1rem solid white;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+div.input-box label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5rem 0;
+    transition: top 0.5s, color 0.5s;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+div.input-box:nth-of-type(1) div.warning {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(0, -100%);
+    text-align: center;
+    background-color: #b00;
+    border-radius: 2%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+div.input-box div.warning.hide {
+    display: none;
+}
+
+div.input-box:nth-of-type(1) div.warning::before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 95%);
+    content: '';
+    border-right: 1rem solid transparent;
+    border-left: 1rem solid transparent;
+    border-top: 1.5rem solid #b00;
+}
+
+div.input-box:nth-of-type(2) div.warning {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(0, 100%);
+    text-align: center;
+    background-color: #b00;
+    border-radius: 2%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+div.input-box:nth-of-type(2) div.warning::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    content: '';
+    border-right: 1rem solid transparent;
+    border-left: 1rem solid transparent;
+    border-bottom: 1.5rem solid #b00;
+}
+
+div.input-box input:focus~label,
+div.input-box input.valid~label {
+    top: -0.5rem;
+    left: 0;
+    transform: translateY(0);
+    color: #5A0102;
+    font-size: 1rem;
+}
+
+div.box input[type='submit'] {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.8rem 1rem;
+    border: none;
+    background-color: #D07206;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+    font-weight: bold;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+div.login-link {
+    overflow: hidden;
+}
+
+div.login-link a {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #5A0102;
+}
+
+div.login-link span {
+    display: block;
+    position: relative;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #5A0102;
+}
+
+div.login-link span::before {
+    position: absolute;
+    top: 50%;
+    right: 60%;
+    transform: translateY(-50%);
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #5A0102;
+}
+
+div.login-link span::after {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%);
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #5A0102;
+}
+
+div.login-link a.new-account {
+    padding: 0.8rem 1rem;
+    margin: 1rem auto 0;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+    background-color: #5A0102;
+    color: white;
+}
+
+@media (min-width: 360px) and (orientation: portrait) {
+
+    section.login-page div.box {
+        padding: 3.4rem;
+        box-shadow: 0 1.1rem 1.7rem #0000007F;
+    }
+
+    div.box h1 {
+        font-size: 1.7rem;
+        margin-bottom: 1.7rem;
+    }
+
+    div.box div.input-box {
+        margin-bottom: 1.7rem;
+    }
+
+    div.input-box input {
+        padding: 0.6rem 0;
+        font-size: 1.4rem;
+    }
+
+    div.input-box label {
+        padding: 0.6rem 0;
+        font-size: 1.4rem;
+    }
+
+    div.input-box:nth-of-type(1) div.warning {
+        padding: 0.6rem 1.1rem;
+        font-size: 1.1rem;
+    }
+
+    div.input-box:nth-of-type(1) div.warning::before {
+        border-right: 1rem solid transparent;
+        border-left: 1rem solid transparent;
+        border-top: 1.7rem solid #b00;
+    }
+
+    div.input-box:nth-of-type(2) div.warning {
+        padding: 0.6rem 1.1rem;
+        font-size: 1.1rem;
+    }
+
+    div.input-box:nth-of-type(2) div.warning::before {
+        border-right: 1.1rem solid transparent;
+        border-left: 1.1rem solid transparent;
+        border-bottom: 1.7rem solid #b00;
+    }
+
+    div.input-box input:focus~label,
+    div.input-box input.valid~label {
+        top: -0.6rem;
+        font-size: 1.1rem;
+    }
+
+    div.box input[type='submit'] {
+        margin: 1.1rem 0;
+        padding: 0.9rem 1.1rem;
+        font-size: 1.4rem;
+    }
+
+    div.login-link a {
+        margin: 0.6rem 0;
+        font-size: 1.1rem;
+    }
+
+    div.login-link span {
+        margin: 1.1rem 0;
+        font-size: 1.4rem;
+    }
+
+    div.login-link a.new-account {
+        padding: 0.9rem 1.1rem;
+        margin: 1.1rem auto 0;
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 410px) and (orientation: portrait) {
+
+    section.login-page div.box {
+        padding: 3.9rem;
+        box-shadow: 0 1.3rem 1.9rem #0000007F;
+    }
+
+    div.box h1 {
+        font-size: 1.9rem;
+        margin-bottom: 1.9rem;
+    }
+
+    div.box div.input-box {
+        margin-bottom: 1.9rem;
+    }
+
+    div.input-box input {
+        padding: 0.7rem 0;
+        font-size: 1.5rem;
+    }
+
+    div.input-box label {
+        padding: 0.7rem 0;
+        font-size: 1.5rem;
+    }
+
+    div.input-box:nth-of-type(1) div.warning {
+        padding: 0.7rem 1.3rem;
+        font-size: 1.3rem;
+    }
+
+    div.input-box:nth-of-type(1) div.warning::before {
+        border-right: 1.3rem solid transparent;
+        border-left: 1.3rem solid transparent;
+        border-top: 1.9rem solid #b00;
+    }
+
+    div.input-box:nth-of-type(2) div.warning {
+        padding: 0.7rem 1.3rem;
+        font-size: 1.3rem;
+    }
+
+    div.input-box:nth-of-type(2) div.warning::before {
+        border-right: 1.3rem solid transparent;
+        border-left: 1.3rem solid transparent;
+        border-bottom: 1.9rem solid #b00;
+    }
+
+    div.input-box input:focus~label,
+    div.input-box input.valid~label {
+        top: -0.5rem;
+        font-size: 1.3rem;
+    }
+
+    div.box input[type='submit'] {
+        margin: 1.3rem 0;
+        padding: 1rem 1.3rem;
+        font-size: 1.5rem;
+    }
+
+    div.login-link a {
+        margin: 0.7rem 0;
+        font-size: 1.3rem;
+    }
+
+    div.login-link span {
+        margin: 1.3rem 0;
+        font-size: 1.5rem;
+    }
+
+    div.login-link a.new-account {
+        padding: 1rem 1.3rem;
+        margin: 1.3rem auto 0;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+
+    section.login-page div.box {
+        min-width: 70%;
+        padding: 5.7rem;
+        box-shadow: 0 1.9rem 2.8rem #0000007F;
+    }
+
+    div.box h1 {
+        font-size: 2.8rem;
+        margin-bottom: 2.8rem;
+    }
+
+    div.box div.input-box {
+        margin-bottom: 2.8rem;
+    }
+
+    div.input-box input {
+        padding: 0.9rem 0;
+        border-bottom: 0.15rem solid white;
+        font-size: 2.3rem;
+    }
+
+    div.input-box label {
+        padding: 0.9rem 0;
+        font-size: 2.3rem;
+    }
+
+    div.input-box:nth-of-type(1) div.warning {
+        padding: 0.9rem 1.9rem;
+        font-size: 1.9rem;
+    }
+
+    div.input-box:nth-of-type(1) div.warning::before {
+        border-right: 1.9rem solid transparent;
+        border-left: 1.9rem solid transparent;
+        border-top: 2.8rem solid #b00;
+    }
+
+    div.input-box:nth-of-type(2) div.warning {
+        padding: 0.9rem 1.9rem;
+        font-size: 1.9rem;
+    }
+
+    div.input-box:nth-of-type(2) div.warning::before {
+        border-right: 1.9rem solid transparent;
+        border-left: 1.9rem solid transparent;
+        border-bottom: 2.8rem solid #b00;
+    }
+
+    div.input-box input:focus~label,
+    div.input-box input.valid~label {
+        top: -0.9rem;
+        font-size: 1.9rem;
+    }
+
+    div.box input[type='submit'] {
+        margin: 1.9rem 0;
+        padding: 1.5rem 1.9rem;
+        font-size: 2.3rem;
+    }
+
+    div.login-link a {
+        margin: 0.9rem 0;
+        font-size: 1.9rem;
+    }
+
+    div.login-link span {
+        margin: 1.9rem 0;
+        font-size: 2.3rem;
+    }
+
+    div.login-link a.new-account {
+        padding: 1.5rem 1.9rem;
+        margin: 1.9rem auto 0;
+        font-size: 2.3rem;
+    }
+}
+
+@media (orientation: landscape) {
+
+    section.login-page div.box {
+        min-width: 0;
+        flex-basis: 26.7rem;
+        padding: 1.8rem 6.7rem;
+        box-shadow: 0 0.8rem 1.2rem #0000007F;
+    }
+
+    div.box h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    div.box div.input-box {
+        margin-bottom: 1.2rem;
+    }
+
+    div.input-box input {
+        width: 100%;
+        padding: 0.4rem 0;
+        font-size: 0.6rem;
+    }
+
+    div.input-box label {
+        padding: 0.4rem 0;
+        font-size: 0.6rem;
+    }
+
+    div.input-box:nth-of-type(1) div.warning,
+    div.input-box:nth-of-type(2) div.warning {
+        left: 100%;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.5rem;
+        width: 100%;
+    }
+
+    div.input-box:nth-of-type(1) div.warning {
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    div.input-box:nth-of-type(2) div.warning {
+        bottom: 50%;
+        transform: translate(0, 50%);
+    }
+
+
+    div.input-box:nth-of-type(1) div.warning::before,
+    div.input-box:nth-of-type(2) div.warning::before {
+        top: 50%;
+        bottom: 50%;
+        left: 0;
+        transform: translate(-95%, -50%);
+        border-top: 0.6rem solid transparent;
+        border-bottom: 0.6rem solid transparent;
+        border-right: 0.8rem solid #b00;
+        border-left: none;
+    }
+
+    div.input-box input:focus~label,
+    div.input-box input.valid~label {
+        top: -0.8rem;
+        font-size: 0.5rem;
+    }
+
+    div.box input[type='submit'] {
+        margin: 0;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.6rem;
+    }
+
+    div.login-link a {
+        margin: 0.4rem 0;
+        font-size: 0.5rem;
+    }
+
+
+    div.login-link span {
+        margin: 0;
+        font-size: 0.5rem;
+        font-weight: normal;
+    }
+
+    div.login-link span::before,
+    div.login-link span::after {
+        height: 0.5px;
+    }
+
+    div.login-link a.new-account {
+        padding: 0.4rem 0.8rem;
+        margin: 0.8rem auto 0;
+        font-size: 0.5rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+
+    section.login-page div.box {
+        flex-basis: 32rem;
+        padding: 2.1rem 8rem;
+        box-shadow: 0 0.9rem 1.4rem #0000007F;
+    }
+
+    div.box h1 {
+        font-size: 1.4rem;
+        margin-bottom: 1.4rem;
+    }
+
+    div.box div.input-box {
+        margin-bottom: 1.4rem;
+    }
+
+    div.input-box input {
+        padding: 0.5rem 0;
+        font-size: 0.7rem;
+    }
+
+    div.input-box label {
+        padding: 0.5rem 0;
+        font-size: 0.7rem;
+    }
+
+    div.input-box:nth-of-type(1) div.warning,
+    div.input-box:nth-of-type(2) div.warning {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.7rem;
+    }
+
+    div.input-box:nth-of-type(1) div.warning::before,
+    div.input-box:nth-of-type(2) div.warning::before {
+        border-top: 0.7rem solid transparent;
+        border-bottom: 0.7rem solid transparent;
+        border-right: 0.9rem solid #b00;
+    }
+
+    div.input-box input:focus~label,
+    div.input-box input.valid~label {
+        font-size: 0.6rem;
+    }
+
+    div.box input[type='submit'] {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.7rem;
+    }
+
+    div.login-link a {
+        margin: 0.5rem 0;
+        font-size: 0.6rem;
+    }
+
+    div.login-link span {
+        font-size: 0.7rem;
+    }
+
+    div.login-link span::before,
+    div.login-link span::after {
+        height: 1px;
+    }
+
+    div.login-link a.new-account {
+        padding: 0.5rem 0.9rem;
+        margin: 0.9rem auto 0;
+        font-size: 0.7rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 960px) {
+
+    section.login-page div.box {
+        flex-basis: 48rem;
+        padding: 3.2rem 12rem;
+        box-shadow: 0 1.3rem 2.1rem #0000007F;
+    }
+
+    div.box h1 {
+        font-size: 2.4rem;
+        margin-bottom: 2.4rem;
+    }
+
+    div.box div.input-box {
+        margin-bottom: 2.4rem;
+    }
+
+    div.input-box input {
+        padding: 0.8rem 0;
+        font-size: 1.3rem;
+    }
+
+    div.input-box label {
+        font-size: 1.3rem;
+    }
+
+    div.input-box:nth-of-type(1) div.warning,
+    div.input-box:nth-of-type(2) div.warning {
+        padding: 0.8rem 1.6rem;
+        font-size: 1.1rem;
+    }
+
+    div.input-box:nth-of-type(1) div.warning::before,
+    div.input-box:nth-of-type(2) div.warning::before {
+        border-top: 1.2rem solid transparent;
+        border-bottom: 1.2rem solid transparent;
+        border-right: 1.6rem solid #b00;
+    }
+
+    div.input-box input:focus~label,
+    div.input-box input.valid~label {
+        top: -1.6rem;
+        font-size: 1rem;
+    }
+
+    div.box input[type='submit'] {
+        padding: 0.8rem 1.6rem;
+        font-size: 1.2rem;
+    }
+
+    div.login-link a {
+        margin: 0.8rem 0;
+        font-size: 1rem;
+    }
+
+    div.login-link span {
+        font-size: 1.1rem;
+    }
+
+    div.login-link a.new-account {
+        padding: 0.8rem 1.6rem;
+        margin: 1.6rem auto 0;
+        font-size: 1.1rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1025px) {
+
+    div.box input[type='submit']:hover {
+        background-color: #8A2504;
+    }
+
+    div.login-link a.forgotten-account:hover {
+        text-decoration: underline;
+    }
+
+    div.login-link a.new-account:hover {
+        background-color: #300001;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+
+    section.login-page div.box {
+        flex-basis: 54rem;
+        padding: 3.6rem 13.5rem;
+        box-shadow: 0 1.4rem 2.3rem #0000007F;
+    }
+
+    div.box h1 {
+        font-size: 2.7rem;
+        margin-bottom: 2.7rem;
+    }
+
+    div.box div.input-box {
+        margin-bottom: 2.7rem;
+    }
+
+    div.input-box input {
+        padding: 0.9rem 0;
+        font-size: 1.4rem;
+    }
+
+    div.input-box label {
+        font-size: 1.4rem;
+    }
+
+    div.input-box:nth-of-type(1) div.warning,
+    div.input-box:nth-of-type(2) div.warning {
+        padding: 0.9rem 1.8rem;
+        font-size: 1.2rem;
+    }
+
+    div.input-box:nth-of-type(1) div.warning::before,
+    div.input-box:nth-of-type(2) div.warning::before {
+        border-top: 1.3rem solid transparent;
+        border-bottom: 1.3rem solid transparent;
+        border-right: 1.8rem solid #b00;
+    }
+
+    div.input-box input:focus~label,
+    div.input-box input.valid~label {
+        top: -1.8rem;
+        font-size: 1.1rem;
+    }
+
+    div.box input[type='submit'] {
+        padding: 0.9rem 1.8rem;
+        font-size: 1.4rem;
+    }
+
+    div.login-link a {
+        margin: 0.9rem 0;
+        font-size: 1.1rem;
+    }
+
+    div.login-link span {
+        font-size: 1.2rem;
+    }
+
+    div.login-link a.new-account {
+        padding: 0.9rem 1.8rem;
+        margin: 1.8rem auto 0;
+        font-size: 1.2rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+
+    section.login-page div.box {
+        flex-basis: 60rem;
+        padding: 4rem 15rem;
+        box-shadow: 0 1.5rem 2.5rem #0000007F;
+    }
+
+    div.box h1 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    div.box div.input-box {
+        margin-bottom: 3rem;
+    }
+
+    div.input-box input {
+        padding: 1rem 0;
+        font-size: 1.6rem;
+    }
+
+    div.input-box label {
+        padding: 1rem 0;
+        font-size: 1.6rem;
+    }
+
+    div.input-box:nth-of-type(1) div.warning,
+    div.input-box:nth-of-type(2) div.warning {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    div.input-box:nth-of-type(1) div.warning::before,
+    div.input-box:nth-of-type(2) div.warning::before {
+        border-top: 1.5rem solid transparent;
+        border-bottom: 1.5rem solid transparent;
+        border-right: 2rem solid #b00;
+    }
+
+    div.input-box input:focus~label,
+    div.input-box input.valid~label {
+        font-size: 1.2rem;
+    }
+
+    div.box input[type='submit'] {
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+    }
+
+    div.login-link a {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    div.login-link span {
+        font-size: 1.4rem;
+    }
+
+    div.login-link a.new-account {
+        padding: 1rem 2rem;
+        margin: 2rem auto 0;
+        font-size: 1.4rem;
+    }
+}
