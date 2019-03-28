@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import Page from './Page';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import { Route } from 'react-router-dom';
 
 class App extends Component {
     constructor(props) {
@@ -162,33 +162,35 @@ class App extends Component {
     render() {
         const { articlesData, informationData, valueData, userData, articlesLoading, valueLoading, informationLoading } = this.state;
         return (
-            <>
-                <Navbar />
-                <Route render={({ location }) => (
-                    <TransitionGroup className='transition'>
-                        <CSSTransition
-                            timeout={450}
-                            classNames='fade'
-                            key={location.key}
-                        >
-                            <main onLoad={() => window.scrollTo(0, 0)}>
-                                <Page
-                                    articles={articlesData}
-                                    info={informationData}
-                                    value={valueData}
-                                    login={userData}
-                                    articlesLoading={articlesLoading}
-                                    valueLoading={valueLoading}
-                                    informationLoading={informationLoading}
-                                />
-                            </main>
-                        </CSSTransition>
-                    </TransitionGroup>
-                )} />
-                <footer>
-                    <Footer />
-                </footer>
-            </>
+            <Router>
+                <div className='appWrap'>
+                    <Navbar />
+                    <Route render={({ location }) => (
+                        <TransitionGroup className='transition'>
+                            <CSSTransition
+                                timeout={450}
+                                classNames='fade'
+                                key={location.pathname}
+                            >
+                                <main onLoad={() => window.scrollTo(0, 0)}>
+                                    <Page
+                                        articles={articlesData}
+                                        info={informationData}
+                                        value={valueData}
+                                        login={userData}
+                                        articlesLoading={articlesLoading}
+                                        valueLoading={valueLoading}
+                                        informationLoading={informationLoading}
+                                    />
+                                </main>
+                            </CSSTransition>
+                        </TransitionGroup>
+                    )} />
+                    <footer>
+                        <Footer />
+                    </footer>
+                </div>
+            </Router>
         );
     }
 }
